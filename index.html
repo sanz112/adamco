@@ -2,16 +2,40 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/wittstack180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/wittstack32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/wittstack16.png">
+  <link rel="manifest" href="static/img/site.html">
+  <link rel="manifest" href="/css/static/site.webmanifest">
+    <title>WittStack | Create Secure & Robust Applications</title>
+    <meta name="keywords" content="Web Application Development, App Development, WittStack, Programming, VTU, Vending Airtime, Data, Utility, Bills, Airtime, Vending, Hardware, Neural Networks, Machine Learning, Coding">
+    <meta name="theme-color" content="#f700dc">
 
-  <title>Adams Cooperation WorkShop</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- This site is optimized with the Yoast SEO Premium plugin v11.8 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="description" content="At WittStack;  we create robust,secure and affordable website, mobile apps, designs and marketing for small and large scale business owners around the world."/>
+    <link rel="canonical" href="https://www.wittstack.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WittStack" />
+    <meta property="og:description" content="At WittStack; we create robust, secure and affordable website, mobile apps, designs and marketing for small, medium and large scale business owners around the globe." />
+    <meta property="og:url" content="https://www.wittstack.com/" />
+    <meta property="og:site_name" content="WittStack" />
+    <meta property="og:image" content="img/wittstacklogopng.png" />
+    <meta property="og:image:secure_url" content="/static/img/wittstacklogo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="At WittStack; we create robust, secure and affordable website, mobile apps, designs and marketing for small, medium and large scale business owners around the globe." />
+    <meta name="twitter:title" content="WittStack" />
+    <meta name="twitter:site" content="WittStack" />
+    <meta name="twitter:image" content="./img/wittstacklogopng.png" />
+    <meta name="twitter:creator" content="@wittstack" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      <!-- Favicons -->
+      <link href="assets/img/favicon.png" rel="icon">
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
@@ -23,7 +47,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="assets/js/jquery.js"></script>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/heroslider.css" rel="stylesheet">
@@ -37,6 +62,40 @@
 </head>
 
 <body>
+  <style>
+    #line {
+      overflow: hidden;
+    }
+    section.back {
+    display: grid;
+    z-index: -1;
+    overflow-y: hidden;
+    grid-template-columns: repeat(10, auto);
+  }
+  section.back div {
+    background-color: white;
+    height: 100vh;
+    transition: background-color 1s;
+  }
+  #hero {
+  z-index: 2;
+  }
+  </style>
+
+<div id="line">
+  <section class="back">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</div>
 
   <!-- ======= Header ======= -->
   <!-- <div class="d-block" style="width: 100%; background:#2e862b; color:#fff;">
@@ -44,10 +103,17 @@
     <p>info@adamsco.com.ng/p>
   </div> -->
   <style>
+    .wittstack {
+      position: absolute;
+      top: 0;
+      left:0;
+      right: 0;
+    }
     ul.nv {
       list-style-type: none;
       margin: 0;
       padding: 0;
+      font-size: 14px;
       overflow: hidden;
       background-color: rgb(29, 29, 29);
     }
@@ -69,13 +135,20 @@
     }
     
     .nav .active {
-      background-color: #2e862b;
+      background-color: #f700dc;
+      color: #333;
+    }
+    @media (max-width: 768px) {
+      ul.nv {
+      font-size: 12px;
+      }
     }
     </style>
+    <div class="wittstack">
     <div class="div fixed-top">
   <ul class="nv">
-    <li class="nav"><a href="#home">0800000000</a></li>
-    <li class="nav" id="nav"><a href="#news">info@adamsco.com.ng</a></li>
+    <li class="nav"><a href="#home">08132782405</a></li>
+    <li class="nav" id="nav"><a href="#news">info@wittstack.com</a></li>
     <!-- <li class="nav"><a href="#contact">Contact</a></li> -->
     <li class="nav" style="float:right"><a class="active" href="#about">Book An Appointment</a></li>
   </ul>
@@ -85,7 +158,7 @@
 
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Ninestars</span></a></h1> -->
-        <img src="assets/img/logo/adamcologo.png" alt="">
+        <img width="100%" src="assets/img/wittstacklogopng.png" alt="">
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -125,6 +198,12 @@
 </div>
 
   <style>
+    .getstarted {
+      /* background: rgb(50,86,129) !important; */
+      color: #fff !important;
+      background: rgb(83,51,89) !important;
+      background: linear-gradient(90deg, rgba(83,51,89,1) 0%, rgba(47,47,179,1) 14%, rgba(135,65,128,1) 100%) !important;
+    }
     @media (max-width: 576px) {
       .slide-title {
         font-size: 8vh !important;
@@ -135,41 +214,39 @@
       }
       
     }
-    .button {
+    /* .button {
         background: #2e862b;
       }
       .button:hover {
         background: transparent;
         color: #fff;
         font-weight: 900;
-      }
+      } */
   </style>
-  <section>
-    <div class="hero hero-slider">
-      <ul class="slides">
-        <li data-bg-image="assets/img/services/work3.jpg">
-          <div class="container">
-            <h2 style="font-size: 8vw;" class="slide-title">Welcome to Adams Cooperation</h2>
-            <p class="slide-desc">A one-stop for your car(s), automobiles repairs. Explore more of our Services.</p>
-            <a href="#main" class="btn btn-success btn-lg button">Learn More...</a>
-          </div>
-        </li>
-        <li data-bg-image="#">
-          <div class="container">
-            <h2 style="font-size: 8vw;" class="slide-title">Welcome to Adams Cooperation</h2>
-            <p class="slide-desc">Explore more of our Services.</p>
-            <a href="#main" class="btn btn-success btn-lg button">Learn More...</a>
-          </div>
-        </li>
-      </ul>
-    </div> <!-- .hero-slider -->
 
-  </section>
+<section id="hero" class="d-flex align-items-center">
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h1>Better Digital Experience with Witt<span style="color: plum;">Stack</span></h1>
+        <h2>We are team of talented designers making websites with Bootstrap</h2>
+        <div>
+          <a href="#about" class="btn-get-started btn btn-lg scrollto">Get Started</a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img">
+        <img src="assets/img/hero-img.svg" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+
+</section>
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about mt-5">
       <div class="container">
 
         <div class="row justify-content-between">
@@ -177,7 +254,7 @@
             <img src="assets/img/car.svg" class="img-fluid" alt="" data-aos="zoom-in">
           </div>
           <div class="col-lg-6 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">About Us!</h3>
+            <h3 id="aboutus" data-aos="fade-up">About Us!</h3>
             <p data-aos="fade-up" data-aos-delay="100">
               We are a group of automobiles repair professionals.  We’ve provided high-quality auto repair service to the residents and businesses in Lagos, Nigeria and her diaspora.
             </p>
@@ -612,10 +689,9 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>Adams Cooperation</h3>
             <p>
-              Alh atunkase street, cele 2 area, agodo-alaara, odogunyan-itaoluwo Ikorodu <br>
-              Lagos State, Nigeria <br><br>
-              <strong>Phone:</strong> +234 800000 000<br>
-              <strong>Email:</strong> info@adamsco.com.ng<br>
+              Ibadan & Lagos Nigeria. <br><br>
+              <strong>Phone:</strong> +234 8132782405<br>
+              <strong>Email:</strong> info@wittstack.com<br>
             </p>
           </div>
 
@@ -672,9 +748,52 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+</div>
   <!-- Vendor JS Files -->
-  <script src="assets/js/jquery.js"></script>
+  
+
+
+<script>
+  let tl = anime.timeline({
+easing: 'easeOutExpo',
+duration: 750
+});
+
+tl.add({
+    targets: 'section.back div',
+    width: '100%',
+    backgroundColor: 'rgb(197, 197, 255)',
+    delay: anime.stagger(100) // increase delay by 100ms for each elements.
+})
+.add({
+    targets: 'section.back div',
+    width: '98%',
+    backgroundColor: 'rgb(235, 235, 255)'
+})
+// .add({
+//     targets: 'h1',
+//     top: '20%',
+//     opacity: 1,
+//     duration: 4000,
+// }, '-=1600')
+
+var squash = anime({
+    targets: 'section.back',
+    scaleY: '2',
+    scaleX: '2',
+    translateX: '40%',
+    rotate: '60deg',
+    duration: 5000,
+    autoplay: false,
+})
+
+document.querySelector('#hero').addEventListener('mouseover', () => {
+  // alert('hello');
+    squash.play();
+})
+
+</script>
+ 
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
